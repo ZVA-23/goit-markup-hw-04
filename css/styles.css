@@ -198,8 +198,7 @@ html {
     width: 696px;
     text-align: center;
 
-    color: var(--primary-white-color);
-   
+    color: var(--primary-white-color);   
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -371,6 +370,32 @@ html {
     margin-right: 0;
 }
 
+/* Our clients */
+
+.client {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.client-icon {
+    fill: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    align-items: center;
+    width: calc((100% - 5 * 30px) / 6);
+    width: 170px;
+    height: 92px;
+    margin-right: 30px;
+}
+
+.client-icon:nth-child(6n) {
+    margin-right: 0;
+} 
+
+.client-icon:hover {
+    fill: var(--accent-color);
+    border: 1px solid #2196F3;
+}
 
 
 /* Стили для portfolio.html */

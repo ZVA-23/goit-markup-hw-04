@@ -29,8 +29,17 @@
                 </ul>
             </nav>
             <ul class="contact list">
-                <li class="contact-item"><a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a></li>
-                <li class="contact-item"><a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a></li>
+                <li class="contact-item">   
+                    <svg class="icon envelope" width="16" height="12">
+                        <use href="./image/symbol-defs.svg#envelope"></use>
+                    </svg>
+                    <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
+                </li>
+                <li class="contact-item">
+                    <svg class="icon smartphone" width="10" height="16">
+                        <use href="./image/symbol-defs.svg#smartphone"></use>
+                    </svg>
+                    <a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
@@ -38,7 +47,7 @@
     <!--main-->
     <main>
         <!--Hero-->
-        <section class="hero">
+        <section class="hero overlay">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button class="hero-button" type="button">Заказать услугу</button>
@@ -95,6 +104,28 @@
                         <div class="card-content">
                             <h3 class="team-name">Игорь Демьяненко</h3>
                             <p class="team-description">Product Designer</p>
+                            <ul class="social list">
+                                <li class="social-item">
+                                    <svg class="icon-instagram" width="44" height="44">
+                                        <use href="./image/symbol-defs.svg#instagram"></use>
+                                    </svg>                                    
+                                </li>
+                                <li class="social-item">
+                                    <svg class="icon twitter" width="44" height="44 ">
+                                        <use href="./image/symbol-defs.svg#twitter"></use>
+                                    </svg>
+                                </li>
+                                <li class="social-item">
+                                    <svg class="icon facebook" width="44" height="44">
+                                        <use href="./image/symbol-defs.svg#fasebook"></use>
+                                    </svg>
+                                </li>
+                                <li class="social-item">
+                                    <svg class="icon linkedin" width="44" height="44">
+                                        <use href="./image/symbol-defs.svg#linkedin"></use>
+                                    </svg>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="team-item card">
@@ -121,6 +152,18 @@
                 </ul>
             </div>
         </section>
+        <section>
+            <div>
+                <h2>Постоянные клиенты</h2>
+                <ul>
+                    <li>
+                        <svg>
+                            <use href="./image/symbol-defs.svg#client1"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
     <!--footer-->
     <footer class="footer">
@@ -137,4 +180,3 @@
     </footer>
 </body>
 </html>
-

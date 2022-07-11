@@ -63,7 +63,7 @@ html {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    /* outline: 1px solid red;  */
+    outline: 1px solid red;  
 }
 
 .img {
@@ -140,13 +140,14 @@ html {
 }
 
 .contact-link {
+    margin-left: 10px;
     color: var(--primari-text-color);
 }
 
 .nav-link:hover, 
 .contact-link:hover, 
 .nav-link:focus, 
-.contact-link:focus  {
+.contact-link:focus {
     color: var(--accent-color);
 }
 
@@ -154,13 +155,39 @@ html {
     color: var(--accent-color);
 }
 
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+
+.icon:hover,
+.icon:focus {
+    fill: var(--accent-color);
+}
 
 /* Стили для index.html */
 /* Hero */
 
 .hero {
     padding: 200px 0;
-    background-color: #2F303A;
+
+}
+
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4)); 
+    background-image: url("../image/hero.jpg");  
+    background-color: #C4C4C4; 
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+
+
 }
 
 .hero-title {
@@ -275,24 +302,6 @@ html {
 
 /* Our team */
 
-.teams {
-    background-color: #F5F4FA;
-}
-
-.team {
-    display: flex;
-
-}
-
-.team-item {
-    width:calc((100% - 3 * 30px) / 4);
-    margin-right: 30px;
-}
-
-.team-item:nth-child(4n) {
-    margin-right: 0;
-}
-
 .card {
     background-color: var(--primary-white-color);
 }
@@ -302,6 +311,23 @@ html {
     border-radius: 0px 0px 4px 4px;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.teams {
+    background-color: #F5F4FA;
+}
+
+.team {
+    display: flex;
+}
+
+.team-item {
+    width:calc((100% - 3 * 30px) / 4);
+    margin-right: 30px;
+}
+
+.team-item:nth-child(4n) {
+    margin-right: 0;
 }
 
 .team-name {
@@ -324,6 +350,28 @@ html {
     line-height: 1.19;
     text-align: center;
 }
+
+.social {
+    display: flex;
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    width: calc((100% - 3 * 10px) / 4);
+    margin-right: 10px;
+    fill: var(--primary-white-color);
+}
+
+
+.social-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+
 
 /* Стили для portfolio.html */
 /* Our projects */

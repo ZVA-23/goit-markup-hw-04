@@ -30,16 +30,25 @@
                 </ul>
             </nav>
             <ul class="contact list">
-                <li class="contact-item"><a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
+                <li class="contact-item">
+                    <svg class="icon-envelope" width="16" height="12">
+                        <use href="./image/symbol-defs.svg#envelope"></use>
+                    </svg>
+                    <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
                 </li>
-                <li class="contact-item"><a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a></li>
+                <li class="contact-item">
+                    <svg class="icon-smartphone">
+                        <use href="./image/symbol-defs.svg#smartphone"></use>
+                    </svg>
+                    <a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a>
+                </li>
             </ul>
         </div>
     </header>
     <!--main-->
     <main>
         <section class="section projects">
-           <div class="container">
+            <div class="container">
             <h1 class="visually-hidden">Hаши проекты</h1>
             <!--filter-->
             <ul class="project-filter list">
@@ -125,23 +134,51 @@
                     </div>
                 </li>
             </ul>
-           </div>
+            </div>
         </section>
     </main>
     <!--footer-->
     <footer class="footer">
-        <div class="container">
-            <a href="./index.html" class="logo">Web<span class="accent current">Studio</span></a>
-            <address class="address-info">
-                <ul class="address list">
-                    <li class="address-item"><a href="https://goo.gl/maps/piqngm7oDQpEDh6u6" class="address-link"
-                            target="_blank" rel="noopener nofollow noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
-                    <li class="address-item"><a href="mailto:info@devstudio.com"
-                            class="address-link current">info@devstudio.com</a></li>
-                    <li class="address-item"><a href="tel:+380961111111" class="address-link current">+38 096 111 11 11</a>
+        <div class="container footer-content">
+            <div class="address-aside">
+                <a href="./index.html" class="logo">Web<span class="accent current">Studio</span></a>
+                <address class="address-info">
+                    <ul class="address list">
+                        <li class="address-item"><a href="https://goo.gl/maps/piqngm7oDQpEDh6u6" class="address-link"
+                                target="_blank" rel="noopener nofollow noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li class="address-item"><a href="mailto:info@devstudio.com"
+                                class="address-link current">info@devstudio.com</a>
+                        </li>
+                        <li class="address-item"><a href="tel:+380961111111" class="address-link current">+38 096 111 11
+                                11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="cummon">
+                <h3 class="cummon-name">присоединяйтесь</h3>
+                <ul class="cummon-social list">
+                    <li class="cummon-social-item">
+                        <svg class="cummon-social-icon">
+                            <use href="./image/symbol-defs.svg#instagram"></use>
+                        </svg>
+                    </li>
+                    <li class="cummon-social-item">
+                        <svg class="cummon-social-icon">
+                            <use href="./image/symbol-defs.svg#twitter"></use>
+                        </svg>
+                    </li>
+                    <li class="cummon-social-item">
+                        <svg class="cummon-social-icon">
+                            <use href="./image/symbol-defs.svg#facebook"></use>
+                        </svg>
+                    </li>
+                    <li class="cummon-social-item">
+                        <svg class="cummon-social-icon">
+                            <use href="./image/symbol-defs.svg#linkedin"></use>
+                        </svg>
                     </li>
                 </ul>
-            </address>
+            </div>
         </div>
     </footer>
 </body>

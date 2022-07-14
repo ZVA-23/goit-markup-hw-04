@@ -63,7 +63,7 @@ html {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 1px solid red;  
+    /* outline: 1px solid red;   */
 }
 
 .img {
@@ -151,15 +151,11 @@ html {
 
 .icon-envelope {
     display: inline-block;
-    width: 16px;
-    height: 12px;
     fill: currentColor;
 }
 
 .icon-smartphone {
     display: inline-block;
-    width: 10px;
-    height: 16px;
     fill: currentColor;
 }
 
@@ -189,16 +185,12 @@ html {
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4)); 
-    background-image: url("../image/hero.jpg");  
-    background-color: #C4C4C4; 
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; 
-
-
+    background-size: cover;
+    background-image: url("../image/overlay.png"), url("../image/hero.jpg"), url("../image/bg.png");
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero-title {
@@ -284,8 +276,6 @@ html {
 
 .feature-icon {
     display: inline-block;
-    width: 70px;
-    height: 70px;
 }
 
 .feature-title {
@@ -404,8 +394,6 @@ html {
 
 .team-social-icon {
     display: inline-block;
-    width: 20px;
-    height: 20px;
 }
 
 .team-social-item:hover {
@@ -436,8 +424,6 @@ html {
 
 .client-icon {
     display: inline-block;
-    width: 106px;
-    height: 60px;
 } 
 
 .client-item:nth-child(6n) {
@@ -507,6 +493,8 @@ html {
 .secondary-button:focus {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
+    box-shadow: X0 Y4 B4 S0 
+    rgba(0, 0, 0, 0.25);
 }
 
 /* Projects */
@@ -537,6 +525,14 @@ html {
 
 .project-item:nth-last-child(-n + 3) {
     margin-bottom: 0;
+}
+
+.project-item:hover,
+.project-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
 }
 
 /* Альтернатива */
@@ -665,8 +661,6 @@ html {
 
 .cummon-social-icon {
     display: inline-block;
-    width: 20px;
-    height: 20px;
 }
 
 .cummon-social-item:hover {

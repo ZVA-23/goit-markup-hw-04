@@ -142,7 +142,6 @@ html {
 }
 
 .contact-link {
-    gap: 10px;
     color: var(--primari-text-color);
     font-weight: 500;
     line-height: 1.14;
@@ -153,11 +152,13 @@ html {
 .icon-envelope {
     display: inline-block;
     fill: currentColor;
+    margin-right: 10px;
 }
 
 .icon-smartphone {
     display: inline-block;
     fill: currentColor;
+    margin-right: 10px;
 }
 
 .nav-link:hover,
